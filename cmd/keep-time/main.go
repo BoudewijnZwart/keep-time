@@ -7,4 +7,5 @@ import (
 
 func main() {
 	fmt.Printf("%s", storage.Schema )
+	fmt.Print(storage.NewClientRepository())
 }
