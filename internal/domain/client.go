@@ -1,5 +1,7 @@
 package domain
 
-struct Client {
-
+type Client struct {
+	id         int
+	name       string
+	isPayingMe bool
 }
