@@ -3,6 +3,7 @@ package storage
 import (
 	"embed"
 	"log"
+	"context"
 )
 
 const (
@@ -17,7 +18,9 @@ var queryFiles embed.FS
 
 type ClientRepo interface {
 	GetByID(ctx context.Context, id int)
+	GetByName(ctx context.Context, name str)
 	List(ctx context.Context)
+	Update()
 }
 
 func NewClientRepo() map[string] string {
