@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"keep_time/internal/storage"
+	"keep_time/internal/sqlite_db"
 )
 
 func main() {
 	fmt.Printf("%s", storage.Schema )
-	fmt.Print(storage.NewClientRepository())
+	fmt.Print(storage.NewClientRepo())
 }
