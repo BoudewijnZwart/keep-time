@@ -1,7 +1,7 @@
 -- name: get_clients
 SELECT * FROM clients;
 
--- name: get_clients_by_id
+-- name: get_client_by_id
 SELECT * FROM clients where id = ?;
 
 -- name: insert_client

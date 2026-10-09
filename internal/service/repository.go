@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 	"keep_time/internal/domain"
+	"errors"
 )
 
 type ClientRepo interface {
@@ -11,3 +12,5 @@ type ClientRepo interface {
 	Safe(ctx context.Context, client *domain.Client) error
 	List(ctx context.Context) ([]*domain.Client, error)
 }
+
+var ErrClientNotFound = errors.New("client not found")
